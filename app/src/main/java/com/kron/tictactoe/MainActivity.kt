@@ -1,5 +1,6 @@
  package com.kron.tictactoe
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -28,6 +29,7 @@ import com.kron.tictactoe.databinding.ActivityMainBinding
      }
 
      private fun playSingleplayer() {
-         TODO("Not yet implemented")
+         val i = Intent(this, Singleplayer::class.java)
+         startActivity(i)
      }
  }
