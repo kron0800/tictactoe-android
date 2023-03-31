@@ -13,6 +13,11 @@ class Singleplayer : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivitySingleplayerBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        initUI(savedInstanceState)
+    }
+
+    private fun initUI(savedInstanceState: Bundle?) {
+        // Loads register fragment
         if (savedInstanceState == null) {
             supportFragmentManager.commit {
                 setReorderingAllowed(true)
