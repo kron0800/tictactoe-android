@@ -14,7 +14,8 @@
         android:layout_height="wrap_content"
         android:hint="@string/player_1_name"
         android:inputType="text"
-        android:textColor="@color/black" />
+        android:textColor="@color/black"
+        android:importantForAutofill="no" />
 
     <EditText
         android:id="@+id/etPlayer2Name"
@@ -23,13 +24,23 @@
         android:layout_marginTop="16dp"
         android:hint="@string/player_2_name"
         android:inputType="text"
-        android:textColor="@color/black" />
+        android:textColor="@color/black"
+        android:importantForAutofill="no" />
+
+    <CheckBox
+        android:id="@+id/cbClearBoardAuto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/autoclear_board"
+        android:checked="true"
+        android:gravity="center"/>
 
     <Button
         android:id="@+id/btnStartGame"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="35dp"
         android:text="@string/start_game" />
 
 </androidx.appcompat.widget.LinearLayoutCompat>

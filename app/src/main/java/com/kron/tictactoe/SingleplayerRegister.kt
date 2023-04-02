@@ -38,7 +38,7 @@ class SingleplayerRegister : Fragment() {
     }
 
     private fun startGame() {
-        val gameFragment = SingleplayerGame.newInstance(binding.etPlayer1Name.text.toString(), binding.etPlayer2Name.text.toString())
+        val gameFragment = SingleplayerGame.newInstance(binding.etPlayer1Name.text.toString(), binding.etPlayer2Name.text.toString(), binding.cbClearBoardAuto.isChecked)
         val transaction = activity?.supportFragmentManager?.beginTransaction()
 
         transaction?.replace(R.id.fragmentContainer, gameFragment)
@@ -47,23 +47,4 @@ class SingleplayerRegister : Fragment() {
         transaction?.commit()
     }
 
-    //    companion object {
-//        /**"
-//         * Use this factory method to create a new instance of
-//         * this fragment using the provided parameters.
-//         *
-//         * @param param1 Parameter 1.
-//         * @param param2 Parameter 2.
-//         * @return A new instance of fragment SingleplayerRegister.
-//         */
-//
-//        @JvmStatic
-//        fun newInstance(param1: String, param2: String) =
-//            SingleplayerRegister().apply {
-//                arguments = Bundle().apply {
-//                    putString(ARG_PARAM1, param1)
-//                    putString(ARG_PARAM2, param2)
-//                }
-//            }
-//    }
 }

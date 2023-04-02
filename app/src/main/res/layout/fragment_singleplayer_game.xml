@@ -36,17 +36,19 @@
 
             <TextView
                 android:id="@+id/tvPlayer1Score"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Player 1: 1"
+                android:hint="@string/player1_score"
+                android:textAlignment="center"
                 android:textColorHint="@color/black"
                 android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/tvPlayer2Score"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:hint="Player 2: 0"
+                android:hint="@string/player2_score"
+                android:textAlignment="center"
                 android:textColorHint="@color/black"
                 android:textSize="20sp" />
 
@@ -55,10 +57,11 @@
 
     <TextView
         android:id="@+id/tvPlayerTurn"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="-16dp"
-        android:hint="It's player 1 turn"
+        android:hint="@string/its_player_turn"
+        android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/cvGameContainer"
@@ -92,47 +95,56 @@
             <ImageView
                 android:id="@+id/ivBoardPos1"
                 style="@style/ivBoardPositions"
-                android:src="@drawable/empty" />
+                android:src="@drawable/empty"
+                tools:ignore="ContentDescription" />
 
             <ImageView
                 android:id="@+id/ivBoardPos4"
                 style="@style/ivBoardPositions"
-                android:src="@drawable/empty" />
+                android:src="@drawable/empty"
+                tools:ignore="ContentDescription" />
 
             <ImageView
                 android:id="@+id/ivBoardPos7"
                 style="@style/ivBoardPositions"
-                android:src="@drawable/empty" />
+                android:src="@drawable/empty"
+                tools:ignore="ContentDescription" />
 
             <ImageView
                 android:id="@+id/ivBoardPos2"
                 style="@style/ivBoardPositions"
-                android:src="@drawable/empty" />
+                android:src="@drawable/empty"
+                tools:ignore="ContentDescription"/>
 
             <ImageView
                 android:id="@+id/ivBoardPos5"
                 style="@style/ivBoardPositions"
-                android:src="@drawable/empty" />
+                android:src="@drawable/empty"
+                tools:ignore="ContentDescription"/>
 
             <ImageView
                 android:id="@+id/ivBoardPos8"
                 style="@style/ivBoardPositions"
-                android:src="@drawable/empty" />
+                android:src="@drawable/empty"
+                tools:ignore="ContentDescription"/>
 
             <ImageView
                 android:id="@+id/ivBoardPos3"
                 style="@style/ivBoardPositions"
-                android:src="@drawable/empty" />
+                android:src="@drawable/empty"
+                tools:ignore="ContentDescription"/>
 
             <ImageView
                 android:id="@+id/ivBoardPos6"
                 style="@style/ivBoardPositions"
-                android:src="@drawable/empty" />
+                android:src="@drawable/empty"
+                tools:ignore="ContentDescription" />
 
             <ImageView
                 android:id="@+id/ivBoardPos9"
                 style="@style/ivBoardPositions"
-                android:src="@drawable/empty" />
+                android:src="@drawable/empty"
+                tools:ignore="ContentDescription"/>
 
         </GridLayout>
     </androidx.cardview.widget.CardView>
